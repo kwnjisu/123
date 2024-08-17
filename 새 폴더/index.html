@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에프스포렉스</title>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="http://www.fsporex.co.kr/theme/basic/css/default.css?ver=2303229">
+    <link rel="stylesheet" href="http://fsporex.co.kr/theme/basic/css/style.css">
+    <link rel="stylesheet" href="http://fsporex.co.kr/theme/basic/css/reset.css">
+    <link rel="stylesheet" href="http://fsporex.co.kr/theme/basic/css/header.css">
+    <link rel="stylesheet" href="http://fsporex.co.kr/theme/basic/css/responsive.css">
+    <link rel="stylesheet" href="http://fsporex.co.kr/theme/basic/css/swiper.css">
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- Meta Information -->
+    <link rel="canonical" href="http://www.fsporex.co.kr">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="에프스포렉스">
+    <meta property="og:description" content="대전최고급 스포츠센터, 헬스장, 수영장,사우나, GX 프로그램, 호텔급 시설을 비롯한 다양한 프로그램을 제공">
+    <meta property="og:image" content="http://fsporex.co.kr/theme/basic/img/main_swimming2.png">
+    <meta property="og:url" content="http://www.fsporex.co.kr">
+    <meta name="description" content="대전최고급 스포츠센터, 헬스장, 수영장,사우나, GX 프로그램, 호텔급 시설을 비롯한 다양한 프로그램을 제공">
+    <meta name="keywords" content="대전최고급 스포츠센터, 헬스장, 수영장,사우나, GX 프로그램, 호텔급 시설을 비롯한 다양한 프로그램을 제공">
+    
+    <script>
+        // 자바스크립트 전역변수 선언
+        var g5_url = "http://www.fsporex.co.kr";
+        var g5_bbs_url = "http://www.fsporex.co.kr/bbs";
+        var g5_is_member = "";
+        var g5_is_admin = "";
+        var g5_is_mobile = "";
+        var g5_bo_table = "";
+        var g5_sca = "";
+        var g5_editor = "";
+        var g5_cookie_domain = "";
+        var g5_theme_shop_url = "http://www.fsporex.co.kr/theme/basic/shop";
+        var g5_shop_url = "http://www.fsporex.co.kr/shop";
+    </script>
+</head>
+<body>
+    <!-- 팝업 레이어 시작 -->
+    <div id="hd_pop">
+        <h2>팝업레이어 알림</h2>
+        <div id="hd_pops_17" class="hd_pops" style="top:150px;left:150px">
+            <div class="hd_pops_con" style="width:340px;height:482px">
+                <p><img src="http://fsporex.co.kr/data/editor/2408/a47a9857e50f7fa3ca4e2fa5ab3347b2_1722471803_6686.jpg" alt="팝업 이미지" /><br style="clear:both;" /></p>
+            </div>
+            <div class="hd_pops_footer">
+                <button class="hd_pops_reject hd_pops_17 24"><strong>24</strong>시간 동안 다시 열람하지 않습니다.</button>
+                <button class="hd_pops_close hd_pops_17">닫기 <i class="fa fa-times" aria-hidden="true"></i></button>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function() {
+            $(".hd_pops_reject").click(function() {
+                var id = $(this).attr('class').split(' ');
+                var ck_name = id[1];
+                var exp_time = parseInt(id[2]);
+                $("#" + id[1]).hide();
+                set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+            });
+            $('.hd_pops_close').click(function() {
+                var idb = $(this).attr('class').split(' ');
+                $('#' + idb[1]).hide();
+            });
+            $("#hd").css("z-index", 1000);
+        });
+    </script>
+    <!-- 팝업 레이어 끝 -->
+
+    <!-- 헤더 -->
+    <div class="header-container sub-header">
+        <header class="header">
+            <a href="http://fsporex.co.kr" class="logo" id="sub-logo">
+                <img src="http://fsporex.co.kr/theme/basic/img/fsporex_logo_white.png" alt="위메 로고">
+            </a>
+            <div class="navigation">
+                <ul class="menu">
+                    <div class="close-btn"></div>
+                    <li class="menu-item">
+                        <a class="sub-btn btn-white" href="#">에프스포렉스</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/come/">오시는길</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-btn btn-white" href="#">시설안내</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/fitness/">FITNESS</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/swimming/">SWIMMING</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/gx/">GX PROGRAM</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/sauna/">SAUNA</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-btn btn-white" href="#">이용안내</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/open_hour/">운영시간 및 휴관일</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/swim_time/">수영장 강습안내</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/center_membership/">회원가입</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/refund/">환불/연기</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/assignment/">프로그램 변경/양도</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/locker_card/">개인사물함/회원카드</a></li>
+                            <li class="sub-item"><a href="http://fsporex.co.kr/theme/basic/Rule/">의무규정/책임 및 기타</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-btn btn-white" href="#">커뮤니티</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="http://fsporex.co.kr/bbs/board.php?bo_table=free">커뮤니티</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item">
+                        <a class="sub-btn btn-white" href="#">고객센터</a>
+                        <ul class="sub-menu">
+                            <li class="sub-item"><a href="http://fsporex.co.kr/bbs/board.php?bo_table=notice">공지사항</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu-btn sub-menu-icon"></div>
+        </header>
+    </div>
+
+    <!-- 아이콘 -->
+    <div class="icon-container">
+        <div class="icon-item"><a href="tel:042-485-4000"><img src="http://fsporex.co.kr/theme/basic/img/phone_icon.png" alt="전화 아이콘"></a></div>
+        <div class="icon-item"><a href="http://fsporex.co.kr/theme/basic/come/"><img src="http://fsporex.co.kr/theme/basic/img/location_icon.png" alt="위치 아이콘"></a></div>
+    </div>
+</body>
+</html>

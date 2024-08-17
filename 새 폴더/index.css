@@ -1,0 +1,27 @@
+/ (프로젝트 루트)
+│
+├── index.html (메인 HTML 파일)
+├── css/
+│   ├── default.css
+│   ├── style.css
+│   ├── reset.css
+│   ├── header.css
+│   └── responsive.css
+├── img/
+│   ├── fsporex_logo_white.png
+│   ├── fsporex_logo_orange_full.png
+│   ├── main_swimming1.png
+│   ├── main_swimming2.png
+│   ├── main-title-1.png
+│   ├── main-title-2.png
+│   ├── location.png
+│   ├── telephone.png
+│   ├── clock.png
+│   ├── delete.png
+│   ├── closed.png
+│   └── 기타 이미지 파일들...
+├── js/
+│   ├── main.js
+│   ├── swiper.js
+│   └── 기타 JS 파일들...
+└── 기타 필요한 파일들...
